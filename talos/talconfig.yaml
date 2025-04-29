@@ -22,10 +22,10 @@ cniConfig:
 nodes:
   - hostname: "cluster-1"
     ipAddress: "192.168.1.151"
-    installDisk: "/dev/nvme1"
+    installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/ce4c980550dd2ab1b17bbf2b08801c7eb59418eafe8f279833297925d67c7515
+    talosImageURL: factory.talos.dev/installer/70d243b7e2cbe699e4db5e73356a2add6b4bb8e34eadba9db22c823110e79099
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -41,10 +41,10 @@ nodes:
           ip: "192.168.1.150"
   - hostname: "cluster-2"
     ipAddress: "192.168.1.152"
-    installDisk: "/dev/nvme1"
+    installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/ce4c980550dd2ab1b17bbf2b08801c7eb59418eafe8f279833297925d67c7515
+    talosImageURL: factory.talos.dev/installer/70d243b7e2cbe699e4db5e73356a2add6b4bb8e34eadba9db22c823110e79099
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
@@ -60,10 +60,10 @@ nodes:
           ip: "192.168.1.150"
   - hostname: "cluster-3"
     ipAddress: "192.168.1.153"
-    installDisk: "/dev/nvme1"
+    installDisk: "/dev/sda"
     machineSpec:
       secureboot: false
-    talosImageURL: factory.talos.dev/installer/ce4c980550dd2ab1b17bbf2b08801c7eb59418eafe8f279833297925d67c7515
+    talosImageURL: factory.talos.dev/installer/70d243b7e2cbe699e4db5e73356a2add6b4bb8e34eadba9db22c823110e79099
     controlPlane: true
     networkInterfaces:
       - deviceSelector:
