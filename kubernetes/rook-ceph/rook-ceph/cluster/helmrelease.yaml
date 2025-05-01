@@ -69,7 +69,7 @@ spec:
       storage:
         useAllNodes: true
         useAllDevices: false
-        deviceFilter: sdb
+        deviceFilter: sdb #/dev/sdb 256GB Virtio Drive
         config:
           osdsPerDevice: "1"
     cephBlockPools:
