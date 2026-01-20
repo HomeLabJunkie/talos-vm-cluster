@@ -42,8 +42,8 @@ spec:
         containers:
           *app :
             image:
-              repository: triliumnext/notes
-              tag: v0.95.0
+              repository: triliumnext/trilium
+              tag: v0.101.3
             env:
               TZ: ${TIMEZONE}
               TRILIUM_DATA_DIR: &datadir /trilium-data
