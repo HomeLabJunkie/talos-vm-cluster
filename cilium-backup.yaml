@@ -1,0 +1,1619 @@
+apiVersion: v1
+items:
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:11:05Z"
+    generation: 1
+    labels:
+      app: cert-manager
+      app.kubernetes.io/component: controller
+      app.kubernetes.io/instance: cert-manager
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cert-manager
+      app.kubernetes.io/version: v1.19.1
+      helm.sh/chart: cert-manager-1.19.1_9578566b26b2
+      pod-template-hash: 58b5c56b56
+    name: cert-manager-58b5c56b56-vjdr8
+    namespace: cert-manager
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: cert-manager-58b5c56b56-vjdr8
+      uid: c4c0f92f-40c3-4c48-8957-1f5465998018
+    resourceVersion: "101585187"
+    uid: c9f3c165-3296-4589-bd26-b0b1c02257fd
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 4aa367b359cfa2897bebc18b9353854b9ffd1975d9d9add2bcd3e39453c35c26:eth0
+      container-id: 4aa367b359cfa2897bebc18b9353854b9ffd1975d9d9add2bcd3e39453c35c26
+      k8s-namespace: cert-manager
+      k8s-pod-name: cert-manager-58b5c56b56-vjdr8
+      pod-name: cert-manager/cert-manager-58b5c56b56-vjdr8
+    id: 3348
+    identity:
+      id: 11722
+      labels:
+      - k8s:app.kubernetes.io/component=controller
+      - k8s:app.kubernetes.io/instance=cert-manager
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=cert-manager
+      - k8s:app.kubernetes.io/version=v1.19.1
+      - k8s:app=cert-manager
+      - k8s:helm.sh/chart=cert-manager-1.19.1_9578566b26b2
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=cert-manager
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=cert-manager
+      - k8s:io.kubernetes.pod.namespace=cert-manager
+    named-ports:
+    - name: http-healthz
+      port: 9403
+      protocol: TCP
+    - name: http-metrics
+      port: 9402
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.115
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:11:14Z"
+    generation: 1
+    labels:
+      app: cainjector
+      app.kubernetes.io/component: cainjector
+      app.kubernetes.io/instance: cert-manager
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: cainjector
+      app.kubernetes.io/version: v1.19.1
+      helm.sh/chart: cert-manager-1.19.1_9578566b26b2
+      pod-template-hash: 554b9b8d5c
+    name: cert-manager-cainjector-554b9b8d5c-gsc75
+    namespace: cert-manager
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: cert-manager-cainjector-554b9b8d5c-gsc75
+      uid: e5d0d9e5-7ae2-4504-be76-a7eaa9650ded
+    resourceVersion: "101585338"
+    uid: 188d5d7f-6a97-4ce5-915a-4d8dbd6fe083
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 12928fe81e49e5e1cc47adba23a9ab714f13ba8cc0e08e5063f7d458bfea7ed5:eth0
+      container-id: 12928fe81e49e5e1cc47adba23a9ab714f13ba8cc0e08e5063f7d458bfea7ed5
+      k8s-namespace: cert-manager
+      k8s-pod-name: cert-manager-cainjector-554b9b8d5c-gsc75
+      pod-name: cert-manager/cert-manager-cainjector-554b9b8d5c-gsc75
+    id: 2668
+    identity:
+      id: 4585
+      labels:
+      - k8s:app.kubernetes.io/component=cainjector
+      - k8s:app.kubernetes.io/instance=cert-manager
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=cainjector
+      - k8s:app.kubernetes.io/version=v1.19.1
+      - k8s:app=cainjector
+      - k8s:helm.sh/chart=cert-manager-1.19.1_9578566b26b2
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=cert-manager
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=cert-manager-cainjector
+      - k8s:io.kubernetes.pod.namespace=cert-manager
+    named-ports:
+    - name: http-metrics
+      port: 9402
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.3
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-01T00:06:54Z"
+    generation: 2
+    labels:
+      app: webhook
+      app.kubernetes.io/component: webhook
+      app.kubernetes.io/instance: cert-manager
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: webhook
+      app.kubernetes.io/version: v1.19.1
+      helm.sh/chart: cert-manager-1.19.1_9578566b26b2
+      pod-template-hash: 547d86b8c4
+    name: cert-manager-webhook-547d86b8c4-fhg5p
+    namespace: cert-manager
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: cert-manager-webhook-547d86b8c4-fhg5p
+      uid: 788631d6-dda2-4532-850b-7d114ad0dfb7
+    resourceVersion: "101584018"
+    uid: 585fae6d-76d8-4215-a9a6-96c8d4bbbd0c
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: f69c26ce9430fc78b630c7f2e95b19ff339dab70cb7a951add68842a705666f5:eth0
+      container-id: f69c26ce9430fc78b630c7f2e95b19ff339dab70cb7a951add68842a705666f5
+      k8s-namespace: cert-manager
+      k8s-pod-name: cert-manager-webhook-547d86b8c4-fhg5p
+      pod-name: cert-manager/cert-manager-webhook-547d86b8c4-fhg5p
+    id: 3201
+    identity:
+      id: 6782
+      labels:
+      - k8s:app.kubernetes.io/component=webhook
+      - k8s:app.kubernetes.io/instance=cert-manager
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=webhook
+      - k8s:app.kubernetes.io/version=v1.19.1
+      - k8s:app=webhook
+      - k8s:helm.sh/chart=cert-manager-1.19.1_9578566b26b2
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=cert-manager
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=cert-manager-webhook
+      - k8s:io.kubernetes.pod.namespace=cert-manager
+    named-ports:
+    - name: healthcheck
+      port: 6080
+      protocol: TCP
+    - name: http-metrics
+      port: 9402
+      protocol: TCP
+    - name: https
+      port: 10250
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.220
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:58:50Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: echo
+      app.kubernetes.io/instance: echo
+      app.kubernetes.io/name: echo
+      pod-template-hash: 55b95b54d8
+    name: echo-55b95b54d8-jk6gh
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: echo-55b95b54d8-jk6gh
+      uid: 1604442f-488a-4d4c-8c50-ec34bc1646af
+    resourceVersion: "101628403"
+    uid: 885b87a0-1489-4290-8036-0e2456bb0e34
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 5e6a59d59e50980aa513579ce51365d907230c533452c080f3773961583f395d:eth0
+      container-id: 5e6a59d59e50980aa513579ce51365d907230c533452c080f3773961583f395d
+      k8s-namespace: default
+      k8s-pod-name: echo-55b95b54d8-jk6gh
+      pod-name: default/echo-55b95b54d8-jk6gh
+    id: 2339
+    identity:
+      id: 29284
+      labels:
+      - k8s:app.kubernetes.io/component=echo
+      - k8s:app.kubernetes.io/instance=echo
+      - k8s:app.kubernetes.io/name=echo
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=default
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=default
+      - k8s:io.kubernetes.pod.namespace=default
+    networking:
+      addressing:
+      - ipv4: 10.42.1.85
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:13:22Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: trilium
+      app.kubernetes.io/instance: trilium
+      app.kubernetes.io/name: trilium
+      pod-template-hash: 5f544f976d
+    name: trilium-5f544f976d-ngnj6
+    namespace: default
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: trilium-5f544f976d-ngnj6
+      uid: e53ca788-ee47-4e27-ba41-f1494216f286
+    resourceVersion: "101586584"
+    uid: 995603d6-8c17-4d80-a6cd-af373360041e
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: eca3afa2a73adf4cec36ef5552eb5f371a3d934a89f19968835cf455470f6ef2:eth0
+      container-id: eca3afa2a73adf4cec36ef5552eb5f371a3d934a89f19968835cf455470f6ef2
+      k8s-namespace: default
+      k8s-pod-name: trilium-5f544f976d-ngnj6
+      pod-name: default/trilium-5f544f976d-ngnj6
+    id: 542
+    identity:
+      id: 43306
+      labels:
+      - k8s:app.kubernetes.io/component=trilium
+      - k8s:app.kubernetes.io/instance=trilium
+      - k8s:app.kubernetes.io/name=trilium
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=default
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=default
+      - k8s:io.kubernetes.pod.namespace=default
+    networking:
+      addressing:
+      - ipv4: 10.42.0.233
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:01:32Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: flux-operator
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: flux-operator
+      app.kubernetes.io/version: v0.33.0
+      helm.sh/chart: flux-operator-0.33.0_5a303365aa74
+      pod-template-hash: 545bf6496d
+    name: flux-operator-545bf6496d-4k8rq
+    namespace: flux-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: flux-operator-545bf6496d-4k8rq
+      uid: 6d87b8bf-3ab3-454d-8eb5-3a0a809b12cf
+    resourceVersion: "101631319"
+    uid: 970371e5-d80d-460f-91d9-48cc46c5b092
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: b0487a6194df174efdb27e53f26a07cb9a778f4a99d4c45feed7c97dd39c8b42:eth0
+      container-id: b0487a6194df174efdb27e53f26a07cb9a778f4a99d4c45feed7c97dd39c8b42
+      k8s-namespace: flux-system
+      k8s-pod-name: flux-operator-545bf6496d-4k8rq
+      pod-name: flux-system/flux-operator-545bf6496d-4k8rq
+    id: 2158
+    identity:
+      id: 41334
+      labels:
+      - k8s:app.kubernetes.io/instance=flux-operator
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=flux-operator
+      - k8s:app.kubernetes.io/version=v0.33.0
+      - k8s:helm.sh/chart=flux-operator-0.33.0_5a303365aa74
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/managed-by=flux-operator
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/part-of=flux
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/version=v2.7.3
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/name=flux
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/namespace=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn-version=latest
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn=restricted
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=flux-operator
+      - k8s:io.kubernetes.pod.namespace=flux-system
+    named-ports:
+    - name: http
+      port: 8081
+      protocol: TCP
+    - name: http-metrics
+      port: 8080
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.43
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:00:59Z"
+    generation: 1
+    labels:
+      app: helm-controller
+      app.kubernetes.io/component: helm-controller
+      app.kubernetes.io/part-of: flux
+      pod-template-hash: 74c8c9d7c8
+    name: helm-controller-74c8c9d7c8-tvqxc
+    namespace: flux-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: helm-controller-74c8c9d7c8-tvqxc
+      uid: ff85a4b1-eab7-459f-9eb1-ec5cc7e5d6fb
+    resourceVersion: "101630660"
+    uid: 10570e62-6903-42ef-873f-d2f644143729
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: f321253a5e4530c7077d75f02029e1bebad950913b6ff5a6f30b03600ac0f80f:eth0
+      container-id: f321253a5e4530c7077d75f02029e1bebad950913b6ff5a6f30b03600ac0f80f
+      k8s-namespace: flux-system
+      k8s-pod-name: helm-controller-74c8c9d7c8-tvqxc
+      pod-name: flux-system/helm-controller-74c8c9d7c8-tvqxc
+    id: 15
+    identity:
+      id: 58120
+      labels:
+      - k8s:app.kubernetes.io/component=helm-controller
+      - k8s:app.kubernetes.io/part-of=flux
+      - k8s:app=helm-controller
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/managed-by=flux-operator
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/part-of=flux
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/version=v2.7.3
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/name=flux
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/namespace=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn-version=latest
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn=restricted
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=helm-controller
+      - k8s:io.kubernetes.pod.namespace=flux-system
+    named-ports:
+    - name: healthz
+      port: 9440
+      protocol: TCP
+    - name: http-prom
+      port: 8080
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.82
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:00:59Z"
+    generation: 1
+    labels:
+      app: kustomize-controller
+      app.kubernetes.io/component: kustomize-controller
+      app.kubernetes.io/part-of: flux
+      pod-template-hash: 797dc6f7ff
+    name: kustomize-controller-797dc6f7ff-nns97
+    namespace: flux-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: kustomize-controller-797dc6f7ff-nns97
+      uid: 3747684a-80c5-4b55-9907-5c807faffbdc
+    resourceVersion: "101630665"
+    uid: a92f6fd4-c6eb-4f7b-8252-4e818eff3146
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 1166f0785a555526900f73e471a1d7ea9caa1c69d95d951d4ce636a493b6162a:eth0
+      container-id: 1166f0785a555526900f73e471a1d7ea9caa1c69d95d951d4ce636a493b6162a
+      k8s-namespace: flux-system
+      k8s-pod-name: kustomize-controller-797dc6f7ff-nns97
+      pod-name: flux-system/kustomize-controller-797dc6f7ff-nns97
+    id: 1749
+    identity:
+      id: 12646
+      labels:
+      - k8s:app.kubernetes.io/component=kustomize-controller
+      - k8s:app.kubernetes.io/part-of=flux
+      - k8s:app=kustomize-controller
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/managed-by=flux-operator
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/part-of=flux
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/version=v2.7.3
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/name=flux
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/namespace=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn-version=latest
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn=restricted
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=kustomize-controller
+      - k8s:io.kubernetes.pod.namespace=flux-system
+    named-ports:
+    - name: healthz
+      port: 9440
+      protocol: TCP
+    - name: http-prom
+      port: 8080
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.243
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:01:00Z"
+    generation: 1
+    labels:
+      app: notification-controller
+      app.kubernetes.io/component: notification-controller
+      app.kubernetes.io/part-of: flux
+      pod-template-hash: 79b4d898bd
+    name: notification-controller-79b4d898bd-jtzbd
+    namespace: flux-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: notification-controller-79b4d898bd-jtzbd
+      uid: 1f859843-8aac-4786-8f86-85499efd8a23
+    resourceVersion: "101630675"
+    uid: 56931ea1-e306-4f67-828d-d8f7e410a121
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: a01edb8aca2050a4e65483b7602a8255c5205e8099db878d1502cac4ba14e83c:eth0
+      container-id: a01edb8aca2050a4e65483b7602a8255c5205e8099db878d1502cac4ba14e83c
+      k8s-namespace: flux-system
+      k8s-pod-name: notification-controller-79b4d898bd-jtzbd
+      pod-name: flux-system/notification-controller-79b4d898bd-jtzbd
+    id: 2037
+    identity:
+      id: 2493
+      labels:
+      - k8s:app.kubernetes.io/component=notification-controller
+      - k8s:app.kubernetes.io/part-of=flux
+      - k8s:app=notification-controller
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/managed-by=flux-operator
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/part-of=flux
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/version=v2.7.3
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/name=flux
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/namespace=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn-version=latest
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn=restricted
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=notification-controller
+      - k8s:io.kubernetes.pod.namespace=flux-system
+    named-ports:
+    - name: healthz
+      port: 9440
+      protocol: TCP
+    - name: http
+      port: 9090
+      protocol: TCP
+    - name: http-prom
+      port: 8080
+      protocol: TCP
+    - name: http-webhook
+      port: 9292
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.12
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:01:02Z"
+    generation: 1
+    labels:
+      app: source-controller
+      app.kubernetes.io/component: source-controller
+      app.kubernetes.io/part-of: flux
+      pod-template-hash: 7648476d98
+    name: source-controller-7648476d98-xrbrj
+    namespace: flux-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: source-controller-7648476d98-xrbrj
+      uid: 08b51b86-1cae-43cf-a30e-4399171e85ce
+    resourceVersion: "101630711"
+    uid: 156c4f37-1f1c-47c4-aa74-d48729083a6f
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: e594a1bf70ec2b4c464140d455b90a976c72a428394ea3b6e639d9fe877b3108:eth0
+      container-id: e594a1bf70ec2b4c464140d455b90a976c72a428394ea3b6e639d9fe877b3108
+      k8s-namespace: flux-system
+      k8s-pod-name: source-controller-7648476d98-xrbrj
+      pod-name: flux-system/source-controller-7648476d98-xrbrj
+    id: 3194
+    identity:
+      id: 2919
+      labels:
+      - k8s:app.kubernetes.io/component=source-controller
+      - k8s:app.kubernetes.io/part-of=flux
+      - k8s:app=source-controller
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/instance=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/managed-by=flux-operator
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/part-of=flux
+      - k8s:io.cilium.k8s.namespace.labels.app.kubernetes.io/version=v2.7.3
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/name=flux
+      - k8s:io.cilium.k8s.namespace.labels.fluxcd.controlplane.io/namespace=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=flux-system
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn-version=latest
+      - k8s:io.cilium.k8s.namespace.labels.pod-security.kubernetes.io/warn=restricted
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=source-controller
+      - k8s:io.kubernetes.pod.namespace=flux-system
+    named-ports:
+    - name: healthz
+      port: 9440
+      protocol: TCP
+    - name: http
+      port: 9090
+      protocol: TCP
+    - name: http-prom
+      port: 8080
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.228
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:09:22Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: coredns
+      app.kubernetes.io/name: coredns
+      k8s-app: kube-dns
+      pod-template-hash: 68546794cc
+    name: coredns-68546794cc-99fpc
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: coredns-68546794cc-99fpc
+      uid: d3cdfdf5-2c50-47d9-8741-74d74bb32517
+    resourceVersion: "101584093"
+    uid: a240b7fc-5d60-42b5-af3b-a73cd377b577
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 8bfa091478c3a6b88c5d51ea9d87052166337db7da1a5c3f9cfd89d57810073a:eth0
+      container-id: 8bfa091478c3a6b88c5d51ea9d87052166337db7da1a5c3f9cfd89d57810073a
+      k8s-namespace: kube-system
+      k8s-pod-name: coredns-68546794cc-99fpc
+      pod-name: kube-system/coredns-68546794cc-99fpc
+    id: 567
+    identity:
+      id: 1149
+      labels:
+      - k8s:app.kubernetes.io/instance=coredns
+      - k8s:app.kubernetes.io/name=coredns
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=coredns
+      - k8s:io.kubernetes.pod.namespace=kube-system
+      - k8s:k8s-app=kube-dns
+    named-ports:
+    - name: tcp-53
+      port: 53
+      protocol: TCP
+    - name: tcp-9153
+      port: 9153
+      protocol: TCP
+    - name: udp-53
+      port: 53
+      protocol: UDP
+    networking:
+      addressing:
+      - ipv4: 10.42.2.102
+      node: 192.168.1.152
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-10-12T01:07:38Z"
+    generation: 3
+    labels:
+      app.kubernetes.io/instance: coredns
+      app.kubernetes.io/name: coredns
+      k8s-app: kube-dns
+      pod-template-hash: 68546794cc
+    name: coredns-68546794cc-dmdwd
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: coredns-68546794cc-dmdwd
+      uid: 70834cae-667a-450d-bdd8-8a9b9934d918
+    resourceVersion: "101583831"
+    uid: db74163e-1b8e-4691-b2c7-1f59999c7eae
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 7e9247108b284a0e77a899bf032d4ac71eb5965482106c7ceb89f3b7d793894f:eth0
+      container-id: 7e9247108b284a0e77a899bf032d4ac71eb5965482106c7ceb89f3b7d793894f
+      k8s-namespace: kube-system
+      k8s-pod-name: coredns-68546794cc-dmdwd
+      pod-name: kube-system/coredns-68546794cc-dmdwd
+    id: 831
+    identity:
+      id: 1149
+      labels:
+      - k8s:app.kubernetes.io/instance=coredns
+      - k8s:app.kubernetes.io/name=coredns
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=coredns
+      - k8s:io.kubernetes.pod.namespace=kube-system
+      - k8s:k8s-app=kube-dns
+    named-ports:
+    - name: tcp-53
+      port: 53
+      protocol: TCP
+    - name: tcp-9153
+      port: 9153
+      protocol: TCP
+    - name: udp-53
+      port: 53
+      protocol: UDP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.40
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:10:40Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: metrics-server
+      app.kubernetes.io/name: metrics-server
+      pod-template-hash: 7cd4c58fc7
+    name: metrics-server-7cd4c58fc7-7l965
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: metrics-server-7cd4c58fc7-7l965
+      uid: 22b83246-87b0-4ac6-bac1-d0a661d5a20a
+    resourceVersion: "101584915"
+    uid: bd30eaa5-508d-4e40-bed0-fe160f7ec484
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 56229bd06941577d406f84e7f299c44a60e2ea6f1cb8a16eec4c0d7f487e9918:eth0
+      container-id: 56229bd06941577d406f84e7f299c44a60e2ea6f1cb8a16eec4c0d7f487e9918
+      k8s-namespace: kube-system
+      k8s-pod-name: metrics-server-7cd4c58fc7-7l965
+      pod-name: kube-system/metrics-server-7cd4c58fc7-7l965
+    id: 437
+    identity:
+      id: 33912
+      labels:
+      - k8s:app.kubernetes.io/instance=metrics-server
+      - k8s:app.kubernetes.io/name=metrics-server
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=metrics-server
+      - k8s:io.kubernetes.pod.namespace=kube-system
+    named-ports:
+    - name: https
+      port: 10250
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.178
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:01:45Z"
+    generation: 1
+    labels:
+      app: reloader
+      app.kubernetes.io/instance: reloader
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: reloader
+      app.kubernetes.io/version: v1.4.10
+      chart: reloader-2.2.5_1af12f64b958
+      group: com.stakater.platform
+      helm.sh/chart: reloader-2.2.5_1af12f64b958
+      heritage: Helm
+      pod-template-hash: 7578d86448
+      provider: stakater
+      release: reloader
+      version: v1.4.10
+    name: reloader-7578d86448-gv242
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: reloader-7578d86448-gv242
+      uid: 0a3860bf-6eef-47ef-b1f9-ad85433d63a7
+    resourceVersion: "101631618"
+    uid: a6c68e72-2731-42e6-815e-2c7e0a8586d9
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 1d7cdd034e715ae93e783a78d42036bead1308f274bf46a21d19f6a5841f50c0:eth0
+      container-id: 1d7cdd034e715ae93e783a78d42036bead1308f274bf46a21d19f6a5841f50c0
+      k8s-namespace: kube-system
+      k8s-pod-name: reloader-7578d86448-gv242
+      pod-name: kube-system/reloader-7578d86448-gv242
+    id: 2306
+    identity:
+      id: 847
+      labels:
+      - k8s:app.kubernetes.io/instance=reloader
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=reloader
+      - k8s:app.kubernetes.io/version=v1.4.10
+      - k8s:app=reloader
+      - k8s:chart=reloader-2.2.5_1af12f64b958
+      - k8s:group=com.stakater.platform
+      - k8s:helm.sh/chart=reloader-2.2.5_1af12f64b958
+      - k8s:heritage=Helm
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=reloader
+      - k8s:io.kubernetes.pod.namespace=kube-system
+      - k8s:provider=stakater
+      - k8s:release=reloader
+      - k8s:version=v1.4.10
+    named-ports:
+    - name: http
+      port: 9090
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.90
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-09-20T23:14:47Z"
+    generation: 3
+    labels:
+      app.kubernetes.io/instance: spegel
+      app.kubernetes.io/name: spegel
+      controller-revision-hash: 549d467c68
+      pod-template-generation: "2"
+    name: spegel-6jx5b
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: spegel-6jx5b
+      uid: aad09c66-32c0-4303-9d31-3476fcdae3d5
+    resourceVersion: "101584022"
+    uid: ea94f301-b9da-4b18-9f98-9be957a378ab
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 1dcc8035771d4aeb75f0f1cf26154c24de5532e9e5d99e93b71650b6fb5f112b:eth0
+      container-id: 1dcc8035771d4aeb75f0f1cf26154c24de5532e9e5d99e93b71650b6fb5f112b
+      k8s-namespace: kube-system
+      k8s-pod-name: spegel-6jx5b
+      pod-name: kube-system/spegel-6jx5b
+    id: 2220
+    identity:
+      id: 44634
+      labels:
+      - k8s:app.kubernetes.io/instance=spegel
+      - k8s:app.kubernetes.io/name=spegel
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=spegel
+      - k8s:io.kubernetes.pod.namespace=kube-system
+    named-ports:
+    - name: metrics
+      port: 9090
+      protocol: TCP
+    - name: registry
+      port: 5000
+      protocol: TCP
+    - name: router
+      port: 5001
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.177
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:08:59Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: spegel
+      app.kubernetes.io/name: spegel
+      controller-revision-hash: 549d467c68
+      pod-template-generation: "2"
+    name: spegel-bwpj8
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: spegel-bwpj8
+      uid: 0ccfb103-594a-46fb-9c06-d0f10841fec8
+    resourceVersion: "101583827"
+    uid: b83147fa-5e71-44ef-a72a-46e235cf9c2b
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: ca426bf52f39d673b922e86d8c4451fa91fb35ea39e1fc24048940cf7900112d:eth0
+      container-id: ca426bf52f39d673b922e86d8c4451fa91fb35ea39e1fc24048940cf7900112d
+      k8s-namespace: kube-system
+      k8s-pod-name: spegel-bwpj8
+      pod-name: kube-system/spegel-bwpj8
+    id: 843
+    identity:
+      id: 44634
+      labels:
+      - k8s:app.kubernetes.io/instance=spegel
+      - k8s:app.kubernetes.io/name=spegel
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=spegel
+      - k8s:io.kubernetes.pod.namespace=kube-system
+    named-ports:
+    - name: metrics
+      port: 9090
+      protocol: TCP
+    - name: registry
+      port: 5000
+      protocol: TCP
+    - name: router
+      port: 5001
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.108
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:08:45Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: spegel
+      app.kubernetes.io/name: spegel
+      controller-revision-hash: 549d467c68
+      pod-template-generation: "2"
+    name: spegel-sd5ks
+    namespace: kube-system
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: spegel-sd5ks
+      uid: f73c157e-ad27-4385-89d4-da3b19176883
+    resourceVersion: "101583705"
+    uid: fa918f37-add6-409d-aa98-403160c24417
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: ffa8b06c78442ff76b8cfde6aafb7a3e976c2e4cd7f616e3ff8f6fd0c5afdb62:eth0
+      container-id: ffa8b06c78442ff76b8cfde6aafb7a3e976c2e4cd7f616e3ff8f6fd0c5afdb62
+      k8s-namespace: kube-system
+      k8s-pod-name: spegel-sd5ks
+      pod-name: kube-system/spegel-sd5ks
+    id: 2574
+    identity:
+      id: 44634
+      labels:
+      - k8s:app.kubernetes.io/instance=spegel
+      - k8s:app.kubernetes.io/name=spegel
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=kube-system
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=spegel
+      - k8s:io.kubernetes.pod.namespace=kube-system
+    named-ports:
+    - name: metrics
+      port: 9090
+      protocol: TCP
+    - name: registry
+      port: 5000
+      protocol: TCP
+    - name: router
+      port: 5001
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.2.134
+      node: 192.168.1.152
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:59:16Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: cloudflared
+      app.kubernetes.io/instance: cloudflared
+      app.kubernetes.io/name: cloudflared
+      pod-template-hash: 99d88bf67
+    name: cloudflared-99d88bf67-5hj6t
+    namespace: network
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: cloudflared-99d88bf67-5hj6t
+      uid: f0c76b9b-dc48-41a0-a8a1-3c1aded40662
+    resourceVersion: "101628799"
+    uid: 5e508e28-686c-4984-a286-01602d9aef90
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 4057d3ec494651e685c9d9613e43166cc71ffca6f22317acfd723169ea94078a:eth0
+      container-id: 4057d3ec494651e685c9d9613e43166cc71ffca6f22317acfd723169ea94078a
+      k8s-namespace: network
+      k8s-pod-name: cloudflared-99d88bf67-5hj6t
+      pod-name: network/cloudflared-99d88bf67-5hj6t
+    id: 1574
+    identity:
+      id: 41924
+      labels:
+      - k8s:app.kubernetes.io/component=cloudflared
+      - k8s:app.kubernetes.io/instance=cloudflared
+      - k8s:app.kubernetes.io/name=cloudflared
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=network
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=default
+      - k8s:io.kubernetes.pod.namespace=network
+    networking:
+      addressing:
+      - ipv4: 10.42.1.32
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:09:49Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/instance: external-dns
+      app.kubernetes.io/name: external-dns
+      pod-template-hash: 6898bc6787
+    name: external-dns-6898bc6787-fndjj
+    namespace: network
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: external-dns-6898bc6787-fndjj
+      uid: a197c2a1-f72d-4b83-b103-09a5b74ec6d5
+    resourceVersion: "101584401"
+    uid: 47d37140-5675-4315-875d-e2c9d3a3a24a
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: a21ab952defe9504562dab166102778770271e53d0786d6252711669d73a58fe:eth0
+      container-id: a21ab952defe9504562dab166102778770271e53d0786d6252711669d73a58fe
+      k8s-namespace: network
+      k8s-pod-name: external-dns-6898bc6787-fndjj
+      pod-name: network/external-dns-6898bc6787-fndjj
+    id: 1018
+    identity:
+      id: 9939
+      labels:
+      - k8s:app.kubernetes.io/instance=external-dns
+      - k8s:app.kubernetes.io/name=external-dns
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=network
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=external-dns
+      - k8s:io.kubernetes.pod.namespace=network
+    named-ports:
+    - name: http
+      port: 7979
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.33
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:04:02Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: controller
+      app.kubernetes.io/instance: external-ingress-nginx
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: ingress-nginx
+      app.kubernetes.io/part-of: ingress-nginx
+      app.kubernetes.io/version: 1.14.0
+      helm.sh/chart: ingress-nginx-4.14.0
+      pod-template-hash: bf468f944
+    name: external-ingress-nginx-controller-bf468f944-84frn
+    namespace: network
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: external-ingress-nginx-controller-bf468f944-84frn
+      uid: af58b4c6-2aca-4424-ab87-0f70c19302b7
+    resourceVersion: "101633993"
+    uid: ae00ba59-1c5f-41fe-bc02-7f7f9bbee97a
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: d8f150d9c59a649a274b051e645ffb1025a38216388b921112abbc46fe5c5acf:eth0
+      container-id: d8f150d9c59a649a274b051e645ffb1025a38216388b921112abbc46fe5c5acf
+      k8s-namespace: network
+      k8s-pod-name: external-ingress-nginx-controller-bf468f944-84frn
+      pod-name: network/external-ingress-nginx-controller-bf468f944-84frn
+    id: 3149
+    identity:
+      id: 40431
+      labels:
+      - k8s:app.kubernetes.io/component=controller
+      - k8s:app.kubernetes.io/instance=external-ingress-nginx
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=ingress-nginx
+      - k8s:app.kubernetes.io/part-of=ingress-nginx
+      - k8s:app.kubernetes.io/version=1.14.0
+      - k8s:helm.sh/chart=ingress-nginx-4.14.0
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=network
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=external-ingress-nginx
+      - k8s:io.kubernetes.pod.namespace=network
+    named-ports:
+    - name: http
+      port: 80
+      protocol: TCP
+    - name: https
+      port: 443
+      protocol: TCP
+    - name: metrics
+      port: 10254
+      protocol: TCP
+    - name: webhook
+      port: 8443
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.215
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T21:04:05Z"
+    generation: 1
+    labels:
+      app.kubernetes.io/component: controller
+      app.kubernetes.io/instance: internal-ingress-nginx
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: ingress-nginx
+      app.kubernetes.io/part-of: ingress-nginx
+      app.kubernetes.io/version: 1.14.0
+      helm.sh/chart: ingress-nginx-4.14.0
+      pod-template-hash: 594b9f848d
+    name: internal-ingress-nginx-controller-594b9f848d-hsxst
+    namespace: network
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: internal-ingress-nginx-controller-594b9f848d-hsxst
+      uid: ec3b48a6-21ca-4209-a686-06c1bdaddbdc
+    resourceVersion: "101634056"
+    uid: dd513422-3f00-4152-a994-ad605a33354d
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 257e4550d36bbdc89eb3aa1cc7b37803b614f9de5b1175953040edf5c6fdc77e:eth0
+      container-id: 257e4550d36bbdc89eb3aa1cc7b37803b614f9de5b1175953040edf5c6fdc77e
+      k8s-namespace: network
+      k8s-pod-name: internal-ingress-nginx-controller-594b9f848d-hsxst
+      pod-name: network/internal-ingress-nginx-controller-594b9f848d-hsxst
+    id: 47
+    identity:
+      id: 27442
+      labels:
+      - k8s:app.kubernetes.io/component=controller
+      - k8s:app.kubernetes.io/instance=internal-ingress-nginx
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=ingress-nginx
+      - k8s:app.kubernetes.io/part-of=ingress-nginx
+      - k8s:app.kubernetes.io/version=1.14.0
+      - k8s:helm.sh/chart=ingress-nginx-4.14.0
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=network
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=internal-ingress-nginx
+      - k8s:io.kubernetes.pod.namespace=network
+    named-ports:
+    - name: http
+      port: 80
+      protocol: TCP
+    - name: https
+      port: 443
+      protocol: TCP
+    - name: metrics
+      port: 10254
+      protocol: TCP
+    - name: webhook
+      port: 8443
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.1.116
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-01T00:05:55Z"
+    generation: 2
+    labels:
+      app.kubernetes.io/instance: k8s-gateway
+      app.kubernetes.io/managed-by: Helm
+      app.kubernetes.io/name: k8s-gateway
+      app.kubernetes.io/version: 0.4.0
+      helm.sh/chart: k8s-gateway-2.4.0
+      pod-template-hash: 5b5fcf6885
+    name: k8s-gateway-5b5fcf6885-6gbct
+    namespace: network
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: k8s-gateway-5b5fcf6885-6gbct
+      uid: 0677fe8a-5ed1-430e-be4b-bf58283920cf
+    resourceVersion: "101584013"
+    uid: 1a9208f0-0f5e-4016-9a90-3c52f2f17363
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 8d910c9983b4e48937b7b587970030b2f4fe4deb83caec4585d428a8d62406cb:eth0
+      container-id: 8d910c9983b4e48937b7b587970030b2f4fe4deb83caec4585d428a8d62406cb
+      k8s-namespace: network
+      k8s-pod-name: k8s-gateway-5b5fcf6885-6gbct
+      pod-name: network/k8s-gateway-5b5fcf6885-6gbct
+    id: 3007
+    identity:
+      id: 15601
+      labels:
+      - k8s:app.kubernetes.io/instance=k8s-gateway
+      - k8s:app.kubernetes.io/managed-by=Helm
+      - k8s:app.kubernetes.io/name=k8s-gateway
+      - k8s:app.kubernetes.io/version=0.4.0
+      - k8s:helm.sh/chart=k8s-gateway-2.4.0
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=network
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=k8s-gateway
+      - k8s:io.kubernetes.pod.namespace=network
+    named-ports:
+    - name: dns-udp
+      port: 1053
+      protocol: UDP
+    - name: metrics
+      port: 9153
+      protocol: TCP
+    networking:
+      addressing:
+      - ipv4: 10.42.0.147
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:58:05Z"
+    generation: 1
+    labels:
+      app: rook-ceph-operator
+      helm.sh/chart: rook-ceph-v1.18.7
+      pod-template-hash: ccdf96994
+    name: rook-ceph-operator-ccdf96994-9nhf9
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-ceph-operator-ccdf96994-9nhf9
+      uid: 1791a738-b29b-49ae-a028-468d9019455f
+    resourceVersion: "101627436"
+    uid: a777ad81-cd12-4772-a55f-106387d415d3
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 2505f8a82917ba3b69b5f1d167501c421e2bd73620e5f1afeeb014f4d04659d8:eth0
+      container-id: 2505f8a82917ba3b69b5f1d167501c421e2bd73620e5f1afeeb014f4d04659d8
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-ceph-operator-ccdf96994-9nhf9
+      pod-name: rook-ceph/rook-ceph-operator-ccdf96994-9nhf9
+    id: 1408
+    identity:
+      id: 13394
+      labels:
+      - k8s:app=rook-ceph-operator
+      - k8s:helm.sh/chart=rook-ceph-v1.18.7
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=rook-ceph-system
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.0.142
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:09:24Z"
+    generation: 1
+    labels:
+      app: rook-ceph.cephfs.csi.ceph.com-ctrlplugin
+      pod-template-hash: 57946864f6
+    name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-b6hh9
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-b6hh9
+      uid: 0aed8b81-5d41-4740-8733-af08a107850a
+    resourceVersion: "101584119"
+    uid: bcbf8501-de0f-4a7c-8369-6a234c9a0f1f
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 41467c778f093b6d55b7d8159f57fcc3ee4b49ef08fc2649d82d112724b45fce:eth0
+      container-id: 41467c778f093b6d55b7d8159f57fcc3ee4b49ef08fc2649d82d112724b45fce
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-b6hh9
+      pod-name: rook-ceph/rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-b6hh9
+    id: 468
+    identity:
+      id: 2918
+      labels:
+      - k8s:app=rook-ceph.cephfs.csi.ceph.com-ctrlplugin
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=ceph-csi-cephfs-ctrlplugin-sa
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.1.227
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:08:41Z"
+    generation: 1
+    labels:
+      app: rook-ceph.cephfs.csi.ceph.com-ctrlplugin
+      pod-template-hash: 57946864f6
+    name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-lxmhv
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-lxmhv
+      uid: 3ae07ec8-d210-422f-833d-8757034e6ef8
+    resourceVersion: "101583677"
+    uid: dd3653ca-ef8a-4fab-9b9f-7bfcf76f2e77
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 168cda4647ee8f10dad72a4966790b6acbf69bbb50eca6bd0a6403fc4e961269:eth0
+      container-id: 168cda4647ee8f10dad72a4966790b6acbf69bbb50eca6bd0a6403fc4e961269
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-lxmhv
+      pod-name: rook-ceph/rook-ceph.cephfs.csi.ceph.com-ctrlplugin-57946864f6-lxmhv
+    id: 22
+    identity:
+      id: 2918
+      labels:
+      - k8s:app=rook-ceph.cephfs.csi.ceph.com-ctrlplugin
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=ceph-csi-cephfs-ctrlplugin-sa
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.2.224
+      node: 192.168.1.152
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-10-12T01:07:09Z"
+    generation: 3
+    labels:
+      app: rook-ceph.rbd.csi.ceph.com-ctrlplugin
+      pod-template-hash: cf6c5dc96
+    name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-dfbdd
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-dfbdd
+      uid: a9b4af3f-d321-4be7-af27-b9d8aeb06eb9
+    resourceVersion: "101583678"
+    uid: e9e80093-ad68-425f-92bb-9c36df30d9dd
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: c8da806b3da2f8a11ecf8a3bf5a25b82772defd87b69db3f0cc6dae593a69702:eth0
+      container-id: c8da806b3da2f8a11ecf8a3bf5a25b82772defd87b69db3f0cc6dae593a69702
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-dfbdd
+      pod-name: rook-ceph/rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-dfbdd
+    id: 204
+    identity:
+      id: 43836
+      labels:
+      - k8s:app=rook-ceph.rbd.csi.ceph.com-ctrlplugin
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=ceph-csi-rbd-ctrlplugin-sa
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.2.254
+      node: 192.168.1.152
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T19:09:10Z"
+    generation: 1
+    labels:
+      app: rook-ceph.rbd.csi.ceph.com-ctrlplugin
+      pod-template-hash: cf6c5dc96
+    name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-z96cb
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-z96cb
+      uid: 7a3e8298-a342-4165-b77e-d755da55a144
+    resourceVersion: "101583922"
+    uid: de5ea5a9-dff8-4def-8802-f779bff2853d
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 7d8ef0014f860add60d516edba2377a3189682ffd493dd8f89e42daf1969840f:eth0
+      container-id: 7d8ef0014f860add60d516edba2377a3189682ffd493dd8f89e42daf1969840f
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-z96cb
+      pod-name: rook-ceph/rook-ceph.rbd.csi.ceph.com-ctrlplugin-cf6c5dc96-z96cb
+    id: 2366
+    identity:
+      id: 43836
+      labels:
+      - k8s:app=rook-ceph.rbd.csi.ceph.com-ctrlplugin
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=ceph-csi-rbd-ctrlplugin-sa
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.1.15
+      node: 192.168.1.153
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:58:38Z"
+    generation: 1
+    labels:
+      app: rook-discover
+      app.kubernetes.io/component: rook-discover
+      app.kubernetes.io/created-by: rook-ceph-operator
+      app.kubernetes.io/instance: rook-discover
+      app.kubernetes.io/managed-by: rook-ceph-operator
+      app.kubernetes.io/name: rook-discover
+      app.kubernetes.io/part-of: rook-ceph-operator
+      controller-revision-hash: 7dd5885767
+      pod-template-generation: "10"
+      rook.io/operator-namespace: rook-ceph
+    name: rook-discover-n97bg
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-discover-n97bg
+      uid: 027286a4-9ae8-49e0-86e0-5352a6e9771f
+    resourceVersion: "101628133"
+    uid: 12ab47bf-2ba5-4d7d-96ea-ae4c4b1a2df1
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: e8dbe63f744d94e1a7e861780d8eb33e84100814b937ba181a508685b326b120:eth0
+      container-id: e8dbe63f744d94e1a7e861780d8eb33e84100814b937ba181a508685b326b120
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-discover-n97bg
+      pod-name: rook-ceph/rook-discover-n97bg
+    id: 75
+    identity:
+      id: 47870
+      labels:
+      - k8s:app.kubernetes.io/component=rook-discover
+      - k8s:app.kubernetes.io/created-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/instance=rook-discover
+      - k8s:app.kubernetes.io/managed-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/name=rook-discover
+      - k8s:app.kubernetes.io/part-of=rook-ceph-operator
+      - k8s:app=rook-discover
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=rook-ceph-system
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+      - k8s:rook.io/operator-namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.2.126
+      node: 192.168.1.152
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:58:19Z"
+    generation: 1
+    labels:
+      app: rook-discover
+      app.kubernetes.io/component: rook-discover
+      app.kubernetes.io/created-by: rook-ceph-operator
+      app.kubernetes.io/instance: rook-discover
+      app.kubernetes.io/managed-by: rook-ceph-operator
+      app.kubernetes.io/name: rook-discover
+      app.kubernetes.io/part-of: rook-ceph-operator
+      controller-revision-hash: 7dd5885767
+      pod-template-generation: "10"
+      rook.io/operator-namespace: rook-ceph
+    name: rook-discover-rlmv4
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-discover-rlmv4
+      uid: d5a47240-cbea-4a70-944a-fcf68fcd8bf5
+    resourceVersion: "101627655"
+    uid: d8216799-cd04-46e3-9f14-ea1d62734731
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: 00da62c9c0af48e38039e3dc5da1ebe527c9c92daf765b015071c8826eeb3f21:eth0
+      container-id: 00da62c9c0af48e38039e3dc5da1ebe527c9c92daf765b015071c8826eeb3f21
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-discover-rlmv4
+      pod-name: rook-ceph/rook-discover-rlmv4
+    id: 193
+    identity:
+      id: 47870
+      labels:
+      - k8s:app.kubernetes.io/component=rook-discover
+      - k8s:app.kubernetes.io/created-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/instance=rook-discover
+      - k8s:app.kubernetes.io/managed-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/name=rook-discover
+      - k8s:app.kubernetes.io/part-of=rook-ceph-operator
+      - k8s:app=rook-discover
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=rook-ceph-system
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+      - k8s:rook.io/operator-namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.0.60
+      node: 192.168.1.151
+    state: ready
+- apiVersion: cilium.io/v2
+  kind: CiliumEndpoint
+  metadata:
+    creationTimestamp: "2025-11-15T20:58:28Z"
+    generation: 1
+    labels:
+      app: rook-discover
+      app.kubernetes.io/component: rook-discover
+      app.kubernetes.io/created-by: rook-ceph-operator
+      app.kubernetes.io/instance: rook-discover
+      app.kubernetes.io/managed-by: rook-ceph-operator
+      app.kubernetes.io/name: rook-discover
+      app.kubernetes.io/part-of: rook-ceph-operator
+      controller-revision-hash: 7dd5885767
+      pod-template-generation: "10"
+      rook.io/operator-namespace: rook-ceph
+    name: rook-discover-rm6t5
+    namespace: rook-ceph
+    ownerReferences:
+    - apiVersion: v1
+      kind: Pod
+      name: rook-discover-rm6t5
+      uid: 1ee43771-aba4-43f6-b9ce-108bbadd83b8
+    resourceVersion: "101627898"
+    uid: 196b9c6a-dc97-4cfa-aac4-fea5fc36ae68
+  status:
+    encryption: {}
+    external-identifiers:
+      cni-attachment-id: e65a281fe3b0980f1eda341951f9f22db91bd6e61e5628a0e5eb03ad26456395:eth0
+      container-id: e65a281fe3b0980f1eda341951f9f22db91bd6e61e5628a0e5eb03ad26456395
+      k8s-namespace: rook-ceph
+      k8s-pod-name: rook-discover-rm6t5
+      pod-name: rook-ceph/rook-discover-rm6t5
+    id: 2744
+    identity:
+      id: 47870
+      labels:
+      - k8s:app.kubernetes.io/component=rook-discover
+      - k8s:app.kubernetes.io/created-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/instance=rook-discover
+      - k8s:app.kubernetes.io/managed-by=rook-ceph-operator
+      - k8s:app.kubernetes.io/name=rook-discover
+      - k8s:app.kubernetes.io/part-of=rook-ceph-operator
+      - k8s:app=rook-discover
+      - k8s:io.cilium.k8s.namespace.labels.kubernetes.io/metadata.name=rook-ceph
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/name=cluster-apps
+      - k8s:io.cilium.k8s.namespace.labels.kustomize.toolkit.fluxcd.io/namespace=flux-system
+      - k8s:io.cilium.k8s.policy.cluster=default
+      - k8s:io.cilium.k8s.policy.serviceaccount=rook-ceph-system
+      - k8s:io.kubernetes.pod.namespace=rook-ceph
+      - k8s:rook.io/operator-namespace=rook-ceph
+    networking:
+      addressing:
+      - ipv4: 10.42.1.168
+      node: 192.168.1.153
+    state: ready
+kind: List
+metadata:
+  resourceVersion: ""
