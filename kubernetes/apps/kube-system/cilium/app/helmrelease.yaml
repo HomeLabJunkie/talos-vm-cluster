@@ -19,7 +19,11 @@ spec:
   chart:
     spec:
       chart: cilium
+<<<<<<< HEAD
+      version: 1.18.6
+=======
       version: 1.17.5
+>>>>>>> 7366dfba3aa9f81bd616ed23047702484c9dd748
       sourceRef:
         kind: HelmRepository
         name: cilium
