@@ -3924,7 +3924,7 @@ authentication:
             # @schema
             override: ~
             repository: "ghcr.io/spiffe/spire-server"
-            tag: "1.12.4"
+            tag: "1.14.1"
             digest: "sha256:34147f27066ab2be5cc10ca1d4bfd361144196467155d46c45f3519f41596e49"
             useDigest: true
             pullPolicy: "IfNotPresent"
