@@ -1,9 +1,0 @@
-# See https://github.com/onedr0p/cluster-template/pull/2020 for context
-
-# - op: remove
-#   path: /cluster/apiServer/admissionControl
-
-# cluster:
-#   apiServer:
-#     admissionControl:
-#       $$patch: delete
