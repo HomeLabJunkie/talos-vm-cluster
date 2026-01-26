@@ -1,2 +1,7 @@
-- op: remove
-  path: /cluster/apiServer/admissionControl
+# - op: remove
+#   path: /cluster/apiServer/admissionControl
+
+cluster:
+  apiServer:
+    admissionControl:
+      $patch: delete
