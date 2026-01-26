@@ -4,4 +4,4 @@
 cluster:
   apiServer:
     admissionControl:
-      $patch: delete
+      $$patch: delete
